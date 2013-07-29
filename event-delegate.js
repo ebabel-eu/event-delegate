@@ -70,7 +70,7 @@
     };
 
     // Create a large number of form elements.
-    sampleCode.setupForm = function () {
+    sampleCode.setupForm = (function () {
         var form, input, index;
 
         // Create form and append it to the body.
@@ -93,6 +93,6 @@
             element: document.getElementById('ManyInputsForm'),
             listenTo: 'click'
         });
-    }(); // () executes this function automatically when script is loaded.
+    }()); // () executes this function automatically when script is loaded.
 
 }(window));
